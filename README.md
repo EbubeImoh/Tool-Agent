@@ -44,10 +44,20 @@ Tool Agent/
     cd Tool-Agent
     ```
 
-2.  **Create a virtual environment (recommended):**
+2.  **Create and configure the environment:**
+
+    a.  **Create a virtual environment (recommended):**
     ```bash
     python -m venv .venv
     source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+    ```
+
+    b.  **Create a `.env` file:**
+        In the root directory of the project (e.g., `/Users/ebubeimoh/Documents/AI Development Kit/Tool Agent/.env`), create a file named `.env`. This file will store your environment variables, such as your API key.
+
+        Add your Google API key to the `.env` file like this:
+        ```env
+        GOOGLE_API_KEY="YOUR_API_KEY_HERE"
     ```
 
 3.  **Install dependencies:**
